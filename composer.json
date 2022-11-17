@@ -1,0 +1,21 @@
+{
+    "name": "netbrothers-gmbh/auftragsdatei-parser",
+    "description": "Parser for GKV Auftragsdatei files",
+    "type": "project",
+    "license": "GPLv3",
+    "autoload": {
+        "psr-4": {
+            "NetbrothersGmbh\\AuftragsdateiParser\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thilo Ratnaweera",
+            "email": "thilo.ratnaweera@netbrothers.de"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "symfony/console": "^6.1"
+    }
+}

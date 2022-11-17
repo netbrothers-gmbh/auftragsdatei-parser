@@ -1,0 +1,25 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * Project: auftragsdatei-parser
+ * 
+ * @author Thilo Ratnaweera <info@netbrothers.de>
+ * @copyright © 2022 NetBrothers GmbH.
+ * @license GPLv3
+ */
+
+declare(strict_types=1);
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use NetbrothersGmbh\AuftragsdateiParser\Command\AufParserCommand;
+use NetbrothersGmbh\AuftragsdateiParser\Service\Parser;
+use Symfony\Component\Console\Application;
+
+$console = new Application(
+    'NetBrothers GmbH Auftragsdatei-Parser',
+    '1.0.0-rc1'
+);
+$console->add(new AufParserCommand(new Parser));
+$console->setDefaultCommand(AufParserCommand::getDefaultName(), true);
+($console)->run();
