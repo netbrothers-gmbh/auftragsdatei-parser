@@ -1,0 +1,20 @@
+name: Aufparser Actions
+run-name: Build Aufparser 🚀
+on: 
+ push:
+   branches:
+     - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install dependencies
+        uses: php-actions/composer@v6
+        with:
+          php_version: "8.1"
+      - name: Static analysis
+        uses: php-actions/phpstan@v3
+        with:
+          level: 5
+          php_version: "8.1"
+          path: src/
