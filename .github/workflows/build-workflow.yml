@@ -1,5 +1,5 @@
-name: Aufparser Actions
-run-name: Build Aufparser 🚀
+name: Aufparser Build Action
+run-name: Build Aufparser 🚧
 on: 
  push:
    branches:
@@ -19,8 +19,3 @@ jobs:
           level: 5
           php_version: "8.1"
           path: src/
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
-        with:
-          files: "bin/aufparser.phar"
