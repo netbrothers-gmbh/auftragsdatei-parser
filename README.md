@@ -1,6 +1,6 @@
 ![build status](https://github.com/netbrothers-gmbh/auftragsdatei-parser/actions/workflows/build-workflow.yml/badge.svg) ![release status](https://github.com/netbrothers-gmbh/auftragsdatei-parser/actions/workflows/release-workflow.yml/badge.svg)
 
-# About Auftragsdatei-Parser
+# NetBrothers Auftragsdatei-Parser
 
 Auftragsdatei-Parser parses GKV Auftragsdatei files (`.AUF` files) and presents
 their content in various formats.
